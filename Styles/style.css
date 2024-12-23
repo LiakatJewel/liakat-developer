@@ -205,13 +205,14 @@ footer{
     width: 100%;
 }
 /* Responsive styles  */
-.hide{
-    display: none;
-}
+
 /* Mobile device  */
 @media screen and (max-width:576px) {
-    .skill-container{
+    .skill-container, .about-info-container, .banner, nav> ul, nav{
         flex-direction: column;
+    }
+    ul{
+        gap: 30px;
     }
     #what-i-do-description{
         padding: 20px;
@@ -230,4 +231,25 @@ footer{
     .footer-column{
         width: 80%;
     }
+    .about{
+        padding: 20px;
+    }
+    .header-section{
+        background-image: none;
+    }
+    .banner > .profile-pic{
+    width: 100%;
+    }
+    .banner{
+        padding: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+
+    }
 }
+
+/* Medium Device */
+@media screen and (min-width:576px) and (max-width:960px){
+    
+} 
